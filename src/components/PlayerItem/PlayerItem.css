@@ -1,0 +1,57 @@
+.player-item{
+    display: flex-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-item-status{
+    font-size: 25px;
+    font-weight: 700;
+}
+.player-item-status.is-play{
+    color:green;
+
+}
+
+.player-item-status.is-stop{
+    color: red;
+}
+
+.player-item-status.is-pause{
+    color:blue ;
+}
+
+slider{
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+  }
+  .round{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: lightblue;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .start{
+    z-index: 1;
+  }
+
+  .line{
+    position: absolute;
+    left: 100px; /* slider padding */
+    top: 310px; /* slider padding + (.round height / 2) - (line height / 2) */
+    background: lightblue;
+    height: 2px;
+    width: 400px;
+  }
+
+  .end{
+    z-index: 2;
+    position: absolute;
+    left: 100px; /* slider padding */
+    top: 300px; /* slider padding */
+  }
